@@ -6,11 +6,12 @@ jobs:
     name: Build Kotlin/Wasm
     runs-on: ubuntu-latest
     steps:
-      - name: Set up JDK
-        uses: actions/setup-java@v2
+      # 1️⃣ Java 17+로 변경
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
         with:
-          distribution: 'adopt'
-          java-version: '11'
+          distribution: 'temurin'
+          java-version: '17'
 
       - name: Checkout code
         uses: actions/checkout@v3
