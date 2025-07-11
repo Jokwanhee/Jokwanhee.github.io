@@ -19,7 +19,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+
       - name: Run Gradle Tasks
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: ./gradlew jsBrowserDistribution --no-configuration-cache
 
       - name: Fix permissions
