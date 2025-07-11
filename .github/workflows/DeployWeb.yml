@@ -22,12 +22,14 @@ jobs:
       - name: Generate Key
         run: |
           mkdir -p composeApp/src/commonMain/kotlin/com/kwanhee/gym
-          echo "package com.kwanhee.gym
-
-              object Key {
-              const val SupabaseUrl = \"${{ secrets.SUPABASE_URL }}\"
-              const val SupabaseKey = \"${{ secrets.SUPABASE_KEY }}\"
-          }" > composeApp/src/commonMain/kotlin/com/kwanhee/gym/Key.kt"
+          cat <<EOF > composeApp/src/commonMain/kotlin/com/kwanhee/gym/Key.kt
+          package com.kwanhee.gym
+          
+          object Key {
+          const val SupabaseUrl = "${{ secrets.SUPABASE_URL }}"
+          const val SupabaseKey = "${{ secrets.SUPABASE_KEY }}"
+          }
+          EOF
 
 
       - name: Run Gradle Tasks
