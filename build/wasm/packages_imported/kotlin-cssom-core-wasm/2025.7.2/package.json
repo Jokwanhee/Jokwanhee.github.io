@@ -1,0 +1,11 @@
+{
+  "name": "kotlin-cssom-core-wasm",
+  "version": "2025.7.2",
+  "main": "kotlin-cssom-core-wasm.mjs",
+  "types": "kotlin-cssom-core-wasm.d.ts",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}
