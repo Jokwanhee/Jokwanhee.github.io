@@ -18,4 +18,4 @@ captures
 **/xcshareddata/WorkspaceSettings.xcsettings
 *.preferences_pb
 
-/composeApp/src/wasmJsMain/kotlin/com/kwanhee/gym/const/ApiKeys.kt
+ composeApp/src/commonMain/kotlin/com/kwanhee/gym/Key.kt
