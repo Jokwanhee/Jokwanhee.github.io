@@ -11,8 +11,16 @@ jobs:
     permissions:
       pages: write
       id-token: write
-
     steps:
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            ~/.konan
+            ~/.cache/yarn
+          key: ${{ runner.os }}-gradle-clear-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+
       - uses: actions/checkout@v4
 
       - name: Publish Web App
