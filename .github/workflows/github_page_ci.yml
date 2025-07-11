@@ -1,57 +1,21 @@
-name: Publish Application on GitHub Pages
-description: Publish kmp web application on Github Pages
-on: [push, pull_request]
+name: Deploy Web App
 
-inputs:
-  web_package_name:
-    description: 'Name of the Web project module'
-    required: true
+on:
+  push:
+    branches:
+      - main
 
-outputs:
-  page_url:
-    description: 'URL of the deployed web application'
-    value: ${{ steps.deployment.outputs.page_url }}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
 
-runs:
-  using: 'composite'
-  steps:
-    # java setup
-    - uses: actions/setup-java@v4
-      with:
-        distribution: 'zulu'
-        java-version: 17
-    # cache gradle => build speed up
-    - name: Cache Gradle and build outputs
-      uses: actions/cache@v4
-      with:
-        path: |
-          ~/.gradle/caches
-          ~/.gradle/wrapper
-          ~/.konan
-          build
-        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-        restore-keys: ${{ runner.os }}-gradle-
-    # Build Kotlin Multiplatform Web(JS) module / static bundle
-    - name: Build Web(JS) App
-      shell: bash
-      run: ./gradlew jsBrowserDistribution
-    # Github Actions artifact
-    - name: Upload Web Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: web-app
-        path: './${{ inputs.web_package_name }}/build/dist/js/productionExecutable'
-        retention-days: 5 # default : 90
-    # Github Pages setup
-    - name: Setup Pages
-      uses: actions/configure-pages@v5
-    # upload build output
-    - name: Upload static files as artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: './${{ inputs.web_package_name }}/build/dist/js/productionExecutable/'
-    # publish
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+    steps:
+      - uses: actions/checkout@v4
 
+      - name: Publish Web App
+        uses: openMF/KMP-web-publish-action@v1.0.0
+        with:
+          web_package_name: 'GymApp'
