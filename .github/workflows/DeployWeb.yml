@@ -19,11 +19,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Generate Key
+        run: |
+          mkdir -p composeApp/src/commonMain/kotlin/com/kwanhee/gym
+          echo "package com.kwanhee.gym
+
+              object Key {
+              const val SupabaseUrl = \"${{ secrets.SUPABASE_URL }}\"
+              const val SupabaseKey = \"${{ secrets.SUPABASE_KEY }}\"
+          }" > composeApp/src/commonMain/kotlin/com/kwanhee/gym/Key.kt"
+
 
       - name: Run Gradle Tasks
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: ./gradlew jsBrowserDistribution --no-configuration-cache
 
       - name: Fix permissions
