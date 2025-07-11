@@ -44,8 +44,8 @@ config.devServer = {
   "static": [
     "kotlin",
     "../../../../composeApp/build/processedResources/wasmJs/main",
-    "/Users/jogwanhui/kmp/Gym",
-    "/Users/jogwanhui/kmp/Gym/composeApp"
+    "/Users/jogwanhui/kmp/Jokwanhee.github.io",
+    "/Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp"
   ],
   "client": {
     "overlay": {
