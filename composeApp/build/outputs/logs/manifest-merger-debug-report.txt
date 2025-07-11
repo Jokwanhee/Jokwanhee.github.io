@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:2:1-30:12
 MERGED from [androidx.navigation:navigation-runtime-android:2.9.0] /Users/jogwanhui/.gradle/caches/8.13/transforms/760290461bdea8f5f4e4aa2411781b10/transformed/navigation-runtime-release/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-android:2.9.0] /Users/jogwanhui/.gradle/caches/8.13/transforms/47dc9e1916a3d9c411edb0f9fd6e6ab6/transformed/navigation-common-release/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-compose-android:2.9.0] /Users/jogwanhui/.gradle/caches/8.13/transforms/9c4ba64c39b9a452811db9bb62e6336d/transformed/navigation-compose-release/AndroidManifest.xml:2:1-7:12
@@ -68,16 +68,16 @@ MERGED from [com.russhwolf:multiplatform-settings-android-debug:1.3.0] /Users/jo
 MERGED from [co.touchlab:kermit-android-debug:2.0.6] /Users/jogwanhui/.gradle/caches/8.13/transforms/947fa868a6cea8b979871b72ece5dc44/transformed/kermit-debug/AndroidManifest.xml:2:1-7:12
 MERGED from [co.touchlab:kermit-core-android-debug:2.0.6] /Users/jogwanhui/.gradle/caches/8.13/transforms/b5128c86feec50a07db6c986553e43fd/transformed/kermit-core-debug/AndroidManifest.xml:2:1-7:12
 	package
-		INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:2:11-69
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:4:5-28:19
-INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:4:5-28:19
+ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:4:5-28:19
+INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:4:5-28:19
 MERGED from [org.jetbrains.compose.components:components-resources-android:1.8.2] /Users/jogwanhui/.gradle/caches/8.13/transforms/851934bedca8572a49429f5909b17269/transformed/library-release/AndroidManifest.xml:7:5-14:19
 MERGED from [org.jetbrains.compose.components:components-resources-android:1.8.2] /Users/jogwanhui/.gradle/caches/8.13/transforms/851934bedca8572a49429f5909b17269/transformed/library-release/AndroidManifest.xml:7:5-14:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.8.2] /Users/jogwanhui/.gradle/caches/8.13/transforms/17024ffbdc3fd315dfa715eba96cab2a/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
@@ -99,65 +99,65 @@ MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.3.0] /U
 MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/jogwanhui/.gradle/caches/8.13/transforms/02b40eda280f85fc10aa46afac9e3690/transformed/startup-runtime-1.2.0/AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/jogwanhui/.gradle/caches/8.13/transforms/02b40eda280f85fc10aa46afac9e3690/transformed/startup-runtime-1.2.0/AndroidManifest.xml:23:5-29:19
 	android:extractNativeLibs
-		INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /Users/jogwanhui/.gradle/caches/8.13/transforms/857d5b6e325ebc3a79f5ac8803a38c2b/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:9:9-35
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:9:9-35
 	android:label
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:7:9-41
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:7:9-41
 	android:roundIcon
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:8:9-54
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:8:9-54
 	android:icon
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:6:9-43
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:6:9-43
 	android:allowBackup
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:5:9-35
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:5:9-35
 	android:theme
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:10:9-72
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:10:9-72
 activity#com.kwanhee.gymapp.MainActivity
-ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:11:9-27:20
+ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:11:9-27:20
 	android:launchMode
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:13:13-43
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:13:13-43
 	android:exported
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:12:13-36
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:12:13-36
 	android:configChanges
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:14:13-225
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:14:13-225
 	android:name
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:15:13-41
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:15:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:16:13-20:29
+ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:17:17-69
+ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:17:25-66
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:19:17-77
+ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:19:27-74
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:19:27-74
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:gym.app+data:scheme:https
-ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:21:13-26:29
+ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:21:13-26:29
 action#android.intent.action.VIEW
-ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:22:17-69
+ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:22:25-66
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:22:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:23:17-76
+ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:23:17-76
 	android:name
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:23:27-73
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:23:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:24:17-78
+ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:24:17-78
 	android:name
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:24:27-75
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:24:27-75
 data
-ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:25:17-71
+ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:25:17-71
 	android:host
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:25:46-68
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:25:46-68
 	android:scheme
-		ADDED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml:25:23-45
+		ADDED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml:25:23-45
 uses-sdk
-INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml
-INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml
 MERGED from [androidx.navigation:navigation-runtime-android:2.9.0] /Users/jogwanhui/.gradle/caches/8.13/transforms/760290461bdea8f5f4e4aa2411781b10/transformed/navigation-runtime-release/AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-runtime-android:2.9.0] /Users/jogwanhui/.gradle/caches/8.13/transforms/760290461bdea8f5f4e4aa2411781b10/transformed/navigation-runtime-release/AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-common-android:2.9.0] /Users/jogwanhui/.gradle/caches/8.13/transforms/47dc9e1916a3d9c411edb0f9fd6e6ab6/transformed/navigation-common-release/AndroidManifest.xml:20:5-44
@@ -285,9 +285,9 @@ MERGED from [co.touchlab:kermit-android-debug:2.0.6] /Users/jogwanhui/.gradle/ca
 MERGED from [co.touchlab:kermit-core-android-debug:2.0.6] /Users/jogwanhui/.gradle/caches/8.13/transforms/b5128c86feec50a07db6c986553e43fd/transformed/kermit-core-debug/AndroidManifest.xml:5:5-44
 MERGED from [co.touchlab:kermit-core-android-debug:2.0.6] /Users/jogwanhui/.gradle/caches/8.13/transforms/b5128c86feec50a07db6c986553e43fd/transformed/kermit-core-debug/AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
-		INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/jogwanhui/kmp/GymApp/composeApp/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/jogwanhui/kmp/Jokwanhee.github.io/composeApp/src/androidMain/AndroidManifest.xml
 provider#org.jetbrains.compose.resources.AndroidContextProvider
 ADDED from [org.jetbrains.compose.components:components-resources-android:1.8.2] /Users/jogwanhui/.gradle/caches/8.13/transforms/851934bedca8572a49429f5909b17269/transformed/library-release/AndroidManifest.xml:8:9-13:20
 	android:enabled
