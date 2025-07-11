@@ -18,4 +18,4 @@ jobs:
       - name: Publish Web App
         uses: openMF/KMP-web-publish-action@v1.0.0
         with:
-          web_package_name: 'Gym'
+          web_package_name: 'composeApp'
