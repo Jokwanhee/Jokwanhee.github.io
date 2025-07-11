@@ -28,6 +28,10 @@ kotlin {
         }
         binaries.executable()
     }
+    js {
+        browser {}
+        binaries.executable()
+    }
     
     sourceSets {
         
