@@ -54,6 +54,10 @@ jobs:
         run: ./gradlew :composeApp:wasmJsBrowserDistribution --no-configuration-cache
 #        run: gradle :composeApp:wasmJsBrowserDistribution
 
+
+      - name: Copy index.html to 404.html
+        run: cp composeApp/build/dist/js/productionExecutable/index.html composeApp/build/dist/js/productionExecutable/404.html
+
       # 6. Set up GitHub Pages
       - name: "📄 Configure GitHub Pages"
         uses: actions/configure-pages@v5
