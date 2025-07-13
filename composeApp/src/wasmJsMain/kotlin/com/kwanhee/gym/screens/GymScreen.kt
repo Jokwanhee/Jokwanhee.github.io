@@ -96,7 +96,7 @@ fun GymScreen(
                         onShare = {
                             coroutineScope.launch {
                                 val shareUrl =
-                                    stateManager.createAndGenerateShareUrl("http://localhost:8080")
+                                    stateManager.createAndGenerateShareUrl("https://jokwanhee.github.io")
                                 onShare(shareUrl.orEmpty())
                                 println("공유 링크: $shareUrl")
                             }
