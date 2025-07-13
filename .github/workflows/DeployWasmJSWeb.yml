@@ -34,21 +34,34 @@ jobs:
         with:
           gradle-version: 8.9
 
-      # 4. Build the WasmJS App
+      # 4. Generate Secret Key
+      - name: Generate Key
+        run: |
+          mkdir -p composeApp/src/commonMain/kotlin/com/kwanhee/gym
+          cat <<EOF > composeApp/src/commonMain/kotlin/com/kwanhee/gym/Key.kt
+          package com.kwanhee.gym
+
+          object Key {
+          const val SupabaseUrl = "${{ secrets.SUPABASE_URL }}"
+          const val SupabaseKey = "${{ secrets.SUPABASE_KEY }}"
+          }
+          EOF
+
+      # 5. Build the WasmJS App
       - name: "🛠️ Build WasmJS App"
         run: gradle :composeApp:wasmJsBrowserDistribution
 
-      # 5. Set up GitHub Pages
+      # 6. Set up GitHub Pages
       - name: "📄 Configure GitHub Pages"
         uses: actions/configure-pages@v5
 
-      # 6. Upload the built artifact to Pages
+      # 7. Upload the built artifact to Pages
       - name: "📤 Upload GitHub Pages artifact"
         uses: actions/upload-pages-artifact@v3
         with:
           path: composeApp/build/dist/wasmJs/productionExecutable
 
-      # 7. Deploy to GitHub Pages
+      # 8. Deploy to GitHub Pages
       - name: "🚀 Deploy to GitHub Pages"
         id: deployment
         uses: actions/deploy-pages@v4
