@@ -49,7 +49,10 @@ jobs:
 
       # 5. Build the WasmJS App
       - name: "🛠️ Build WasmJS App"
-        run: gradle :composeApp:wasmJsBrowserDistribution
+        env:
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false
+        run: ./gradlew :composeApp:wasmJsBrowserDistribution --no-configuration-cache
+#        run: gradle :composeApp:wasmJsBrowserDistribution
 
       # 6. Set up GitHub Pages
       - name: "📄 Configure GitHub Pages"
