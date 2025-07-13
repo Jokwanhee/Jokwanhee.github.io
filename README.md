@@ -14,7 +14,7 @@ This is a Kotlin Multiplatform project targeting Web.
 
 1. **CI/CD via GitHub Actions**  
    On every push to the `main` branch, the app is built using `wasmJsBrowserDistribution` and deployed automatically to GitHub Pages.
-
+w
 2. **Secure Secret Handling**  
    Supabase credentials are stored as GitHub Secrets, and a `Key.kt` file is generated dynamically during the CI process.
 
