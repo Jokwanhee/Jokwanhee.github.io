@@ -47,6 +47,14 @@ jobs:
           }
           EOF
 
+      - name: Generate Amplitude Key
+        run: |
+          mkdir -p composeApp/src/wasmJsMain/resources
+          cat <<EOF > composeApp/src/wasmJsMain/resources/amplitude.js
+          window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
+          window.amplitude.init('${{ secrets.AMPLITUDE_KEY }}', {"autocapture":{"elementInteractions":true}});
+          EOF
+
       # 5. Build the WasmJS App
       - name: "🛠️ Build WasmJS App"
         env:
