@@ -56,7 +56,7 @@ jobs:
 
 
       - name: Copy index.html to 404.html
-        run: cp composeApp/build/dist/js/productionExecutable/index.html composeApp/build/dist/js/productionExecutable/404.html
+        run: cp composeApp/build/dist/wasmJs/productionExecutable/index.html composeApp/build/dist/wasmJs/productionExecutable/404.html
 
       # 6. Set up GitHub Pages
       - name: "📄 Configure GitHub Pages"
