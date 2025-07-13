@@ -19,3 +19,4 @@ captures
 *.preferences_pb
 
 composeApp/src/commonMain/kotlin/com/kwanhee/gym/Key.kt
+composeApp/src/wasmJsMain/resources/amplitude.js
