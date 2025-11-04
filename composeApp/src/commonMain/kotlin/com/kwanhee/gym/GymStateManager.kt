@@ -92,71 +92,10 @@ class GymStateManager(
 
     private fun loadFriendStateFromSupabase(shareId: String) {
         _isLoading.value = true
-        coroutineScope.launch {
-            try {
-                val result = withContext(Dispatchers.Default) {
-                    SupabaseClient.client.postgrest["pages"]
-                        .select(columns = Columns.list("state", "date", "share_token")) {
-                            filter { eq("share_token", shareId) }
-                        }.decodeSingleOrNull<PageEntry>()
-                }
-
-                if (result != null) {
-                    val gymStatus = when (result.state) {
-                        1 -> GymStatus.GO
-                        2 -> GymStatus.NO
-                        3 -> GymStatus.THINKING
-                        else -> null
-                    }
-
-                    if (gymStatus != null && result.date != null) {
-                        val instant = Instant.parse(result.date + "T00:00:00Z")
-                        _friendState.value = FriendState(
-                            friendId = shareId,
-                            name = "친구",
-                            status = gymStatus,
-                            lastUpdated = instant.epochSeconds
-                        )
-                    } else {
-                        _friendState.value = null
-                    }
-                } else {
-                    _friendState.value = null
-                }
-            } catch (e: Exception) {
-                println("Error loading friend state: ${e.message}")
-                _friendState.value = null
-            } finally {
-                _isLoading.value = false
-            }
-        }
     }
 
     @OptIn(ExperimentalUuidApi::class)
     suspend fun createAndGenerateShareUrl(baseUrl: String): String? {
-        val currentStatus = _userState.value?.status ?: return null
-
-        val shareToken = kotlin.uuid.Uuid.random().toString()
-        val stateValue = when (currentStatus) {
-            GymStatus.GO -> 1
-            GymStatus.NO -> 2
-            GymStatus.THINKING -> 3
-        }
-
-        return try {
-            withContext(Dispatchers.Default) {
-                SupabaseClient.client.postgrest["pages"].insert(
-                    PageEntry(
-                        state = stateValue,
-                        shareToken = shareToken,
-                        date = Clock.System.now().toLocalDateTime(TimeZone.UTC).date.toString()
-                    )
-                )
-                UrlUtils.generateShareUrl(baseUrl, shareToken)
-            }
-        } catch (e: Exception) {
-            println("Error creating share link: ${e.message}")
-            null
-        }
+        return null
     }
 }

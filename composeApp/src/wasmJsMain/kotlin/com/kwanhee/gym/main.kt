@@ -18,7 +18,6 @@ fun main() {
         val font by preloadFont(Res.font.NotoSansKR_VariableFont_wght)
         val fontEmoji by preloadFont(Res.font.NotoColorEmoji_Regular)
 
-
         font?.let { f ->
             fontEmoji?.let { fe ->
                 val fontFamily = FontFamily(f)

@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -18,17 +17,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.kwanhee.gym.SupabaseClient
 import com.kwanhee.gym.model.FriendState
-import com.kwanhee.gym.model.GymStatus
-import com.kwanhee.gym.model.PageEntry
 import com.kwanhee.gymapp.ui.components.FriendStatusCard
 import com.kwanhee.gymapp.ui.components.LoadingFriendCard
 import com.kwanhee.gymapp.ui.theme.GymColors
 import com.kwanhee.gymapp.ui.theme.GymTheme
-import io.github.jan.supabase.postgrest.postgrest
-import io.github.jan.supabase.postgrest.query.Columns
-import kotlinx.datetime.Instant
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
@@ -36,47 +29,6 @@ fun ShareScreen(token: String) {
     var friendState by remember { mutableStateOf<FriendState?>(null) }
     var isLoading by remember { mutableStateOf(true) }
     var error by remember { mutableStateOf<String?>(null) }
-
-    LaunchedEffect(token) {
-        isLoading = true
-        error = null
-        try {
-            val result = SupabaseClient.client.postgrest["pages"]
-                .select(columns = Columns.list("state", "date", "share_token")) {
-                    filter {
-                        eq("share_token", token)
-                    }
-                }.decodeSingleOrNull<PageEntry>()
-
-            if (result != null) {
-                val gymStatus = when (result.state) {
-                    1 -> GymStatus.GO
-                    2 -> GymStatus.NO
-                    3 -> GymStatus.THINKING
-                    else -> null
-                }
-
-                if (gymStatus != null && result.date != null) {
-                    val instant = Instant.parse(result.date + "T00:00:00Z")
-                    friendState = FriendState(
-                        friendId = token,
-                        name = "친구", // Name is not in the pages table, so using a placeholder
-                        status = gymStatus,
-                        lastUpdated = instant.epochSeconds
-                    )
-                } else {
-                    error = "유효하지 않은 공유 정보입니다."
-                }
-            } else {
-                error = "공유 정보를 찾을 수 없습니다."
-            }
-        } catch (e: Exception) {
-            error = "데이터를 불러오는 중 오류가 발생했습니다: ${e.message}"
-            e.printStackTrace()
-        } finally {
-            isLoading = false
-        }
-    }
 
     Box(
         modifier = Modifier
