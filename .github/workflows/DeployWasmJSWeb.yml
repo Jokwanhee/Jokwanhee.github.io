@@ -41,6 +41,7 @@ jobs:
         run: ./gradlew :composeApp:wasmJsBrowserDistribution --no-configuration-cache
 #        run: gradle :composeApp:wasmJsBrowserDistribution
 
+      # ** SPA 라우팅 트릭 : Hash Router -> Browser Router
       - name: Copy index.html to 404.html
         run: cp composeApp/build/dist/wasmJs/productionExecutable/index.html composeApp/build/dist/wasmJs/productionExecutable/404.html
 
