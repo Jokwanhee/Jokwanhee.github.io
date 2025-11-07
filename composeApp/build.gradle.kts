@@ -1,4 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
@@ -48,17 +47,9 @@ kotlin {
 
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.kotlinx.datetime)
-
-            implementation(libs.ktor.client.core)
-            implementation(libs.ktor.client.logging)
-            implementation(project.dependencies.platform(libs.supabase.bom))
-            implementation(libs.supabase.postgrest.kt)
-
         }
         commonTest.dependencies {
             implementation(libs.kotlin.browser)
-            implementation(libs.ktor.client.web)
-
             implementation(libs.kotlin.test)
         }
     }
