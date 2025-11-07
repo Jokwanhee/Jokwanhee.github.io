@@ -1,4 +1,4 @@
-package com.kwanhee.gymapp.ui.theme
+package com.kwanhee.portfolio.ui
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.staticCompositionLocalOf
@@ -8,7 +8,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 @Immutable
-data class GymTypography(
+data class KwanheeTypography(
     val default: TextStyle,
     val emoji: TextStyle = TextStyle(),
 
@@ -235,12 +235,12 @@ data class GymTypography(
         lineHeight = 16.sp,
     ),
 ) {
-    companion object {
+    companion object Companion {
         fun with(
             fontFamily: FontFamily = FontFamily.Default,
             fontWeight: FontWeight = FontWeight.Normal,
             emojiFontFamily: FontFamily = FontFamily.Default,
-        ) = GymTypography(
+        ) = KwanheeTypography(
             default = TextStyle(
                 fontFamily = fontFamily,
                 fontWeight = fontWeight,
@@ -253,6 +253,6 @@ data class GymTypography(
     }
 }
 
-internal val LocalTypography = staticCompositionLocalOf<GymTypography> {
-    error("GymTypography를 provide 해야합니다.")
+internal val LocalTypography = staticCompositionLocalOf<KwanheeTypography> {
+    error("KwanheeTypography를 provide 해야합니다.")
 }

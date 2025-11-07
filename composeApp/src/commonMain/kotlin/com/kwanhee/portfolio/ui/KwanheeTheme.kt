@@ -1,4 +1,4 @@
-package com.kwanhee.gymapp.ui.theme
+package com.kwanhee.portfolio.ui
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -11,7 +11,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 
 // 요구사항에 따른 컬러 팔레트
-object GymColors {
+object KwanheeColors {
     val GoGreen = Color(0xFF34D399)  // 갈래 - 밝은 초록
     val NoRed = Color(0xFFF87171)    // 말래 - 밝은 빨강
     val ThinkingGray = Color(0xFFD1D5DB) // 고민중 - 밝은 회색
@@ -22,22 +22,22 @@ object GymColors {
 }
 
 private val LightColorScheme = lightColorScheme(
-    primary = GymColors.GoGreen,
-    secondary = GymColors.NoRed,
-    tertiary = GymColors.ThinkingGray,
-    background = GymColors.Background,
-    surface = GymColors.Surface,
+    primary = KwanheeColors.GoGreen,
+    secondary = KwanheeColors.NoRed,
+    tertiary = KwanheeColors.ThinkingGray,
+    background = KwanheeColors.Background,
+    surface = KwanheeColors.Surface,
     onPrimary = Color.White,
     onSecondary = Color.White,
     onTertiary = Color.White,
-    onBackground = GymColors.OnBackground,
-    onSurface = GymColors.OnSurface,
+    onBackground = KwanheeColors.OnBackground,
+    onSurface = KwanheeColors.OnSurface,
 )
 
 private val DarkColorScheme = darkColorScheme(
-    primary = GymColors.GoGreen,
-    secondary = GymColors.NoRed,
-    tertiary = GymColors.ThinkingGray,
+    primary = KwanheeColors.GoGreen,
+    secondary = KwanheeColors.NoRed,
+    tertiary = KwanheeColors.ThinkingGray,
     background = Color(0xFF121212),
     surface = Color(0xFF1E1E1E),
     onPrimary = Color.White,
@@ -49,7 +49,7 @@ private val DarkColorScheme = darkColorScheme(
 
 
 @Composable
-fun GymTheme(
+fun KwanheeTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     fontFamily: FontFamily = FontFamily.Default,
     emojiFontFamily: FontFamily = FontFamily.Default,
@@ -62,7 +62,7 @@ fun GymTheme(
     }
 
     CompositionLocalProvider(
-        LocalTypography provides GymTypography.with(
+        LocalTypography provides KwanheeTypography.with(
             fontFamily = fontFamily,
             emojiFontFamily = emojiFontFamily
         )
@@ -74,8 +74,8 @@ fun GymTheme(
     }
 }
 
-object GymTheme {
-    val typography: GymTypography
+object KwanheeTheme {
+    val typography: KwanheeTypography
         @Composable
         @ReadOnlyComposable
         get() = LocalTypography.current

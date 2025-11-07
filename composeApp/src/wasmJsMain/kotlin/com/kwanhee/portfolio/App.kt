@@ -1,14 +1,14 @@
-package com.kwanhee.gym
+package com.kwanhee.portfolio
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import com.kwanhee.gym.WebConstants.PATH_START
-import com.kwanhee.gym.WebConstants.POP_STATE
-import com.kwanhee.gymapp.navigation.NavigationScreens
-import com.kwanhee.gymapp.screens.GymScreen
-import com.kwanhee.gymapp.screens.ShareScreen
+import com.kwanhee.portfolio.WebConstants.PATH_START
+import com.kwanhee.portfolio.WebConstants.POP_STATE
+import com.kwanhee.portfolio.navigation.NavigationScreens
+import com.kwanhee.portfolio.screens.MainScreen
+import com.kwanhee.portfolio.screens.ShareScreen
 import kotlinx.browser.window
 import org.w3c.dom.events.Event
 
@@ -35,7 +35,7 @@ fun App() {
 
     when {
         path == "" || path == PATH_START -> {
-            GymScreen()
+            MainScreen()
         }
 
         path.startsWith("$PATH_START${NavigationScreens.ShareScreen.route}") -> {

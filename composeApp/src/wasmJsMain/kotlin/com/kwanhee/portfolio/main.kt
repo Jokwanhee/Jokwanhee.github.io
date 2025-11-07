@@ -1,13 +1,13 @@
-package com.kwanhee.gym
+package com.kwanhee.portfolio
 
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.window.ComposeViewport
-import com.kwanhee.gymapp.ui.theme.GymTheme
-import gym.composeapp.generated.resources.NotoColorEmoji_Regular
-import gym.composeapp.generated.resources.NotoSansKR_VariableFont_wght
-import gym.composeapp.generated.resources.Res
+import com.kwanhee.portfolio.ui.KwanheeTheme
+import portfolio.composeapp.generated.resources.NotoColorEmoji_Regular
+import portfolio.composeapp.generated.resources.NotoSansKR_VariableFont_wght
+import portfolio.composeapp.generated.resources.Res
 import kotlinx.browser.document
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.preloadFont
@@ -23,7 +23,7 @@ fun main() {
                 val fontFamily = FontFamily(f)
                 val emojiFontFamily = FontFamily(fe)
 
-                GymTheme(
+                KwanheeTheme(
                     fontFamily = fontFamily,
                     emojiFontFamily = emojiFontFamily
                 ) {

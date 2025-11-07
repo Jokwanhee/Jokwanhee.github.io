@@ -1,4 +1,4 @@
-package com.kwanhee.gymapp.navigation
+package com.kwanhee.portfolio.navigation
 
 import kotlinx.serialization.Serializable
 

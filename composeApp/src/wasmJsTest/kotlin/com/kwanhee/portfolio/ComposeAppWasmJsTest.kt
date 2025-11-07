@@ -1,4 +1,4 @@
-package com.kwanhee.gym
+package com.kwanhee.portfolio
 
 import kotlin.test.Test
 import kotlin.test.assertEquals
