@@ -35,17 +35,11 @@ fun App() {
 
     when {
         path == "" || path == PATH_START -> {
-            GymScreen(
-                onShare = { url ->
-                    copyToClipboard(url)
-                }
-            )
-//                window.navigateTo("${NavigationScreens.ShareScreen.route}${demoObjectUI.demoObjectId}")
+            GymScreen()
         }
 
         path.startsWith("$PATH_START${NavigationScreens.ShareScreen.route}") -> {
-            val token = path.substringAfter("$PATH_START${NavigationScreens.ShareScreen.route}")
-            ShareScreen(token = token)
+            ShareScreen()
         }
 
 
