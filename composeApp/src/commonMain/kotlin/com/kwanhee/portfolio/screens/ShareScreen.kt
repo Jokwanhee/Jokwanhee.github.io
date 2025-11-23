@@ -13,7 +13,7 @@ fun ShareScreen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(KwanheeColors.Background),
+            .background(KwanheeColors.background),
         contentAlignment = Alignment.Center
     ) {
     }

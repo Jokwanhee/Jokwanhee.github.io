@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/kotlin,android,androidstudio,gradle,java
 # Edit at https://www.toptal.com/developers/gitignore?templates=kotlin,android,androidstudio,gradle,java
 
+# gemini cli
+.gemini/
+
 ### Android ###
 # Gradle files
 .gradle/

@@ -9,42 +9,44 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
+import org.jetbrains.compose.ui.tooling.preview.Preview
 
 // 요구사항에 따른 컬러 팔레트
 object KwanheeColors {
-    val GoGreen = Color(0xFF34D399)  // 갈래 - 밝은 초록
-    val NoRed = Color(0xFFF87171)    // 말래 - 밝은 빨강
-    val ThinkingGray = Color(0xFFD1D5DB) // 고민중 - 밝은 회색
-    val Background = Color(0xFFFFFBF0)   // 부드러운 미색
-    val Surface = Color(0xFFFFFBF0)
-    val OnSurface = Color(0xFF1F2937)
-    val OnBackground = Color(0xFF1F2937)
+    val background = Color(0xFF1A1A1A)
+    val secondary = Color(0xFF000000)
+    val onSecondary = Color(0xFF363636)
+    val onBackground = Color(0xFFFFFFFF)
+    val primary = Color(0xFF8EE51B)
+    val black = Color(0xFF121212)
+    val white = Color(0xFFFFFFFF)
+    val foreground = Color(0xFFFFFFFF)
 }
 
 private val LightColorScheme = lightColorScheme(
-    primary = KwanheeColors.GoGreen,
-    secondary = KwanheeColors.NoRed,
-    tertiary = KwanheeColors.ThinkingGray,
-    background = KwanheeColors.Background,
-    surface = KwanheeColors.Surface,
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = KwanheeColors.OnBackground,
-    onSurface = KwanheeColors.OnSurface,
+    primary = KwanheeColors.primary,
+    secondary = KwanheeColors.secondary,
+    tertiary = KwanheeColors.white,
+    background = KwanheeColors.background,
+    surface = KwanheeColors.white,
+    onPrimary = KwanheeColors.white,
+    onSecondary = KwanheeColors.onSecondary,
+    onTertiary = KwanheeColors.white,
+    onBackground = KwanheeColors.onBackground,
+    onSurface = KwanheeColors.white,
 )
 
 private val DarkColorScheme = darkColorScheme(
-    primary = KwanheeColors.GoGreen,
-    secondary = KwanheeColors.NoRed,
-    tertiary = KwanheeColors.ThinkingGray,
-    background = Color(0xFF121212),
-    surface = Color(0xFF1E1E1E),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color.White,
-    onSurface = Color.White,
+    primary = KwanheeColors.primary,
+    secondary = KwanheeColors.secondary,
+    tertiary = KwanheeColors.black,
+    background = KwanheeColors.background,
+    surface = KwanheeColors.black,
+    onPrimary = KwanheeColors.black,
+    onSecondary = KwanheeColors.onSecondary,
+    onTertiary = KwanheeColors.black,
+    onBackground = KwanheeColors.onBackground,
+    onSurface = KwanheeColors.black,
 )
 
 
